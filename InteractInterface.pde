@@ -2,13 +2,13 @@
 public class InteractInterface {
   public void drawTitle() { 
     textSize(60);
-    
+
     fill(255);
-    text("Welcome to the Astronomy DICTONARY!", 10, 90);
+    text("Welcome to the Astronomy DICTONARY!", 700, 90);
   }
   public void drawSubTitle1() {
     textSize(30);
-    
+
     fill(255);
     text("Learn More About the Sun!", 100, 250);
   }
