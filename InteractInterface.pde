@@ -21,6 +21,14 @@ public class InteractInterface {
   public void drawBasicInfo() {
     textSize(30);
     fill(0);
-    text("The Solar System is the Sun and all objects that orbit it. It is orbited by massive objects like planets, asteroids, comets, etc. The Solar System is said to be around 4.6 billion years old.", 900, 515, 400, 400);
+    text("The Solar System is the Sun and all objects that orbit it. It is orbited by massive objects like planets, asteroids, comets, etc. The Solar System is said to be around 4.6 billion years old.", 900, 425, 400, 400);
+  }
+  
+  
+  public void drawSunTitle() {
+    textSize(60);
+   fill(255);
+   text("THE SUN", 700, 100);
+    
   }
 }
