@@ -26,6 +26,9 @@ public void draw() {
   if (scene == 3) {
    drawWindow2();
 }
+  if (scene == 2) {
+   drawWindow3();
+}
 }
 
 
@@ -100,4 +103,36 @@ public void drawWindow2() {
   i.drawSunInfo();
  
   
+}
+
+public void drawWindow3() {
+   fill(#a83232);
+  rect(0, 0, displayWidth, 150);
+  fill(#283232);
+  rect(800,300,720, 800);
+  fill(#a83000);
+  rect(0,150,160,160);
+  fill(#a83000);
+ rect(160,150,160,160);
+  fill(#a83000);
+ rect(320,150,160,160);
+  fill(#a83000);
+ rect(480,150,160,160);
+  fill(#a83000);
+ rect(640,150,160,160);
+  fill(#a83000);
+ rect(800,150,160,160);
+  fill(#a83000);
+ rect(960,150,160,160);
+  fill(#a83000);
+ rect(1120,150,160,160);
+  fill(#a83000);
+ rect(1280,150,160,160);
+  fill(#a83000);
+ rect(1440,150,160,160);
+  PImage img; 
+  img = loadImage("planets.en.jpg");
+  image(img, 300, 390, 400, 500);
+  
+
 }
