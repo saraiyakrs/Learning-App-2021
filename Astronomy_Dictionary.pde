@@ -74,7 +74,7 @@ public void drawWindow() {
   fill(#a83232);
   rect(720, 200, 720, 55);
   fill(#f5ef42);
-  rect(800, 400, 720, 385);
+  rect(800, 500, 720, 385);
   PImage img;
   img = loadImage("planets-distance-order-Sun.jpg");
   image(img, 0, 500, 700, 400);
@@ -92,11 +92,12 @@ public void drawWindow2() {
   fill(#a83232);
   rect(0, 0, displayWidth, 150);
   fill(#283232);
-  rect(800,500,720, 385);
+  rect(800,150,720, 800);
   PImage img;
   img = loadImage("sun.jpg");
   image(img, 0, 200, 400, 400);
   i.drawSunTitle();
+  i.drawSunInfo();
  
   
 }
