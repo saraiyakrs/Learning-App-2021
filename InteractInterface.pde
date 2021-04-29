@@ -40,4 +40,10 @@ public class InteractInterface {
  
 
   }
+  public void drawPlanetTitle() {
+   textSize(60);
+   fill(255);
+   textAlign(CENTER);
+   text("PLANETS OF THE SOLAR SYSTEM", 700, 100);
+  }
 }
