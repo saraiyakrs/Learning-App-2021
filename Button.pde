@@ -5,6 +5,7 @@ public class Button {
   public color c;
   public String title, text;
   public Rectangle clickArea;
+  public int fontSIZE;
 
   public Button(int x, int y, int w, int h, String title, color c) {
     this.x = x;
@@ -14,6 +15,7 @@ public class Button {
     this.title = title;
     this.c = c;
     this.clickArea = new Rectangle(x, y, w, h);
+    this.fontSIZE = 25;
   }
 
   public void setText(String text) {
@@ -23,8 +25,8 @@ public class Button {
   public void draw() {
     fill(c);
     rect(x, y, w, h);
-
     fill(0);
+    textSize(fontSIZE);
     textAlign(CENTER);
     text(title, x+w/2, y+h/2);
   }
