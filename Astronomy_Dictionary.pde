@@ -1,6 +1,6 @@
 InteractInterface i = new InteractInterface();
 
-Button b1, b2, b3, b4 ,b5 ,b6 ,b7 ,b8 ,b9 ,b10 ,b11 , b12 , b13;
+Button b1, b2, b3, b4 ;
 int scene =  1 ;
 
 public void setup() {
@@ -12,20 +12,12 @@ public void draw() {
   background(0);
 
   if (scene == 1) {
-     drawWindow();
+    drawWindow();
     b1.draw();
     b2.draw();
   } else if (scene == 2) {
     b3.draw();
-    b5.draw();
-    b6.draw();
-    b7.draw();
-    b8.draw();
-    b9.draw();
-    b10.draw();
-    b11.draw();
-    b12.draw();
-    b13.draw();
+  
   }
   else if (scene == 3 ) {
     b4.draw();
@@ -52,6 +44,10 @@ public void mouseReleased() {
       scene = 2;
       println(b2.title);
     } else if (scene == 2) {
+      switch (scene) {
+         
+      
+      }
       if (b3.isClicked()) {
         scene = 1; 
         println(b3.title);
@@ -77,16 +73,7 @@ public void build() {
   b2 = new Button(720, 200, 720, 55, "Click here to learn more about the Planets!", #a83232);
   b3 = new Button(0, 550, 310, 310, "Return to Main Menu", #2200FF);
   b4 = new Button(0, 550, 310, 310, "Return to Main Menu", #2200FF);
-  b5 = new Button(0,150,160,160, "Mercury", #a83232);
-  b6 = new Button(0,150,160,160, "Venus", #a83232);
-  b7 =  new Button(0,150,160,160, "Earth", #a83232);
-  b8 =  new Button(0,150,160,160, "Mars", #a83232);
-  b9=  new Button(0,150,160,160, "Jupiter", #a83232);
-  b10=  new Button(0,150,160,160, "Saturn", #a83232);
-  b11=  new Button(0,150,160,160, "Uranus ", #a83232);
-  b12=  new Button(0,150,160,160, "Neptune", #a83232);
-  b13 =  new Button(0,150,160,160, "Pluto", #a83232);
-  
+
   
 }
 
@@ -155,6 +142,14 @@ public void drawWindow3() {
   img = loadImage("planets.en.jpg");
   image(img, 300, 390, 500, 500);
   i.drawPlanetTitle();
-  
-
+  i.drawPlanetInfo();
+  i.drawMercuryTitle();
+  i.drawVenusTitle();
+  i.drawEarthTitle();
+  i.drawMarsTitle();
+  i.drawJupiterTitle();
+  i.drawSaturnTitle();
+  i.drawUranusTitle();
+  i.drawNeptuneTitle();
+  i.drawPlutoTitle();
 }
